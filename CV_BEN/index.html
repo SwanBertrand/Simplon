@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Benoit Parsy</title> <!-- Titre dans l'onglet -->
+		<meta charset="utf-8"> <!-- Prise en compte des carectères spéciaux -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Déclaration du viewport pour le coté responsive -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilité navigateurs -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- Ajout de jQuery au projet -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Ajout de Bootstrap au projet -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> <!-- Ajout de bootstrap au projet -->
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> <!-- Ajout de la police Lato -->
+		<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Lien vers le fichier CSS -->
+		<script type="text/javascript" src="js/script.js"></script> <!-- Lien vers le script -->
+	</head>
+	<body data-spy="scroll" data-target=".navbar" offset="60px;"> <!-- Scrollspy pour le hover du menu -->
+		<nav class="navbar navbar-default navbar-fixed-top"> <!-- Navbar -->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span> <!-- Icone du menu en résolution inférieure à tablette -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav"> <!-- Elements du menu -->
+						<li><a href="#about">Moi</a></li>
+						<li><a href="#skills">Compétences</a></li>
+						<li><a href="#experience">Expérience</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#recommandations">Recommandations</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section id="about" class="container-fluid">
+			<div class="col-xs-8 col-md-4 profile-picture">
+				<img src="img/me.jpeg" alt="Benoit Parsy" class="img-circle">
+			</div>
+			<div class="heading">
+				<h1>Benoit Parsy</h1>
+				<h3>Dieu Sram & Développeur Web</h3>
+				<a href="docs/PARSY_CV.odt" class="button1">Télecharger CV</a>
+			</div>
+		</section>
+		<section id="skills">
+			<div class="grey-divider"></div>
+			<div class="heading">
+				<h2>Compétences</h2>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="progress"> <!-- Progress Bar -->
+							<div class="progress-bar" role="progressbar" aria-value-now="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+								<h5>HTML 85%</h5>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-value-now="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+								<h5>CSS 85%</h5>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-value-now="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+								<h5>JAVASCRIPT 90%</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-value-now="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+								<h5>jQuery 85%</h5>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-value-now="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+								<h5>BOOTSTRAP 80%</h5>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-value-now="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+								<h5>ANGULAR 75%</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="experience">
+			<div class="container">
+				<div class="white-divider"></div>
+				<div class="heading">
+					<h2>Expérience professionnelle</h2>
+				</div>
+				<ul class="timeline"> <!-- Timeline -->
+					<li>
+						<div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+						<div class="timeline-panel-container">
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3>GOOGLE</h3>
+									<h4>Développeur Web Senior</h4>
+									<p class="text-muted"><small class="glyphicon glyphicon-time"></small> 2013-2015</p>
+								</div>
+								<div class="timeline-body">
+									<p>Texte osef</p>
+									<p>Autre texte osef</p>
+									<p>Troisieme texte osef</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+						<div class="timeline-panel-container-inverted">
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3>FACEBOOK</h3>
+									<h4>Développeur Web</h4>
+									<p class="text-muted"><small class="glyphicon glyphicon-time"></small> 2010-2013</p>
+								</div>
+								<div class="timeline-body">
+									<p>Texte osef</p>
+									<p>Autre texte osef</p>
+									<p>Troisieme texte osef</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+						<div class="timeline-panel-container">
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3>TWITTER</h3>
+									<h4>Développeur Web Junior</h4>
+									<p class="text-muted"><small class="glyphicon glyphicon-time"></small> 2007-2010</p>
+								</div>
+								<div class="timeline-body">
+									<p>Texte osef</p>
+									<p>Autre texte osef</p>
+									<p>Troisieme texte osef</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="education">
+			<div class="grey-divider"></div>
+			<div class="heading">
+				<h2>Education</h2>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="education-block">
+							<h5>2002-2006</h5>
+							<span class="glyphicon glyphicon-education"></span>
+							<h3>Dernière école</h3>
+							<h4>Dernier diplôme</h4>
+							<div class="grey-divider"></div>
+							<p>Texte</p>
+							<p>Texte</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="education-block">
+							<h5>200x-200x</h5>
+							<span class="glyphicon glyphicon-education"></span>
+							<h3>Avant dernière école</h3>
+							<h4>Avant dernier diplôme</h4>
+							<div class="grey-divider"></div>
+							<p>Texte</p>
+							<p>Texte</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="portfolio">
+			<div class="container">
+				<div class="white-divider"></div>
+				<div class="heading">
+					<h2>Portfolio</h2>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<a href="http://www.facebook.com" target="_blank" class="thumbnail">
+							<img src="img/facebook-share.png" alt="Facebook Share">
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="https://translate.google.fr/?hl=fr" target="_blank" class="thumbnail">
+							<img src="img/google-translate.png" alt="Google Translate">
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="http://www.twitter.com" target="_blank" class="thumbnail">
+							<img src="img/twitter-video.png" alt="Twitter Video">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<a href="http://www.youtube.com" target="_blank" class="thumbnail">
+							<img src="img/youtube.png" alt="Youtube">
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="http://www.twitter.com" target="_blank" class="thumbnail">
+							<img src="img/twitter-retweet.png" alt="Twitter-re">
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="http://www.facebook.com" target="_blank" class="thumbnail">
+							<img src="img/facebook-share.png" alt="Facebook Share">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="recommandations">
+			<div class="container">
+				<div class="grey-divider"></div>
+				<div class="heading">
+					<h2>Recommandations</h2>
+				</div>
+				<div id="myCarousel" class="carousel slide text-center" data-ride="carousel"> <!-- Carousel -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<h3>"Benoit, ce type c'est un dieu vivant!"</h3>
+							<h4>Rémi, Formateur Simplon Cannes Frayère</h4>
+						</div>
+						<div class="item">
+							<h3>"L'intelligence à la vitesse de la lumière!"</h3>
+							<h4>Cyril, Formateur Simplon Cannes Frayère</h4>
+						</div>
+						<div class="item">
+							<h3>"C'est lui qui m'a tout appris à Dofus..."</h3>
+							<h4>Elder Hunter, Padawan Sram</h4>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<footer class="text-center">
+			<a href="#about">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+			<h5>© Copyright Swan Bertrand</h5>
+		</footer>
+	</body>
+</html>
