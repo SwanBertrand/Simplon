@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Formulaire responsive</title>
+	</head>
+	<body>
+		<header>
+			<h1>Nouvel utilisateur</h1>
+		</header>
+		<div id="conteneur">
+			<div id="formulaire">
+				<div id="profil">
+					<h4>Profil</h4>
+				</div>
+				<form id="form">
+					<label for="lastname">Nom: </label>
+					<input type="text" id="lastname" class="inepout" name="lastname" pattern=".{2,}" required>
+					<label for="firstname" class="hide">Nom: </label>
+					<input type="text" id="firstname" class="inepout" name="firstname" pattern=".{2,}" required>
+					<br/>
+					<label for="sexe">Sexe: </label>
+					<select id="sexe" size="1" required>
+						<option>Homme</option>
+						<option>Femme</option>
+						<option>Autre</option>
+					</select>
+					<br id="birthdate" />
+					<label for="birthdate">Date de naissance: </label>
+					<input type="date" id="birthdate" name="birthdate" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required>
+					<br/>
+					<label for="nationality">Nationalité: </label>
+					<input type="text" id="nationality" class="inepout" name="nationality" pattern=".{2,}" required>
+					<br/>
+					<label for="adress">Adresse: </label>
+					<input type="text" id="adress" class="inepout" name="adress" pattern=".{2,}" required>
+					<br/>
+					<label for="postcode">CP: </label>
+					<input type="text" id="postcode" class="inepout" name="postcode" pattern="[0-9]{5}" required>
+					<br/>
+					<label for="city">Ville: </label>
+					<input type="text" id="city" class="inepout" name="city" pattern=".{2,}" required>
+					<br/>
+					<label for="qpv1">QPV:</label>
+					<input type="radio" id="qpv1" name="qpv1">Oui/
+					<label for="qpv2" class="hide">QPV:</label>
+					<input type="radio" id="qpv2" name="qpv1">Non
+					<br id="brqpv" />
+					<label for="mail">Email:</label>
+					<input type="email" id="mail" class="inepout" name="mail" pattern="[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}.[a-z]{2,6}" required>
+					<br/>
+					<label for="phone">Téléphone:</label>
+					<input type="text" id="phone" class="inepout" name="phone" pattern="[0-9]{10}" required>
+					<br/>
+					<label for="status">Status:</label>
+					<select id="status" size="1" required>
+						<option>En recherche d'emploi</option>
+						<option>Etudiant</option>
+						<option>Salarié</option>
+						<option>Profession libérale</option>
+					</select>
+					<br id="brnpole"/>
+					<label for="npole" id="labelnpole">N° pôle emploi: </label>
+					<input type="text" id="npole" class="inepout" name="npole" pattern="[0-9]{7}[A-Z]{1}">
+					<br id="brnsecu" />
+					<label for="nsecu">N° secu: </label>
+					<input type="text" id="nsecu" class="inepout" name="nsecu" pattern="[0-9]{13}" required>
+					<button type="submit" id="save">Enregistrer</button>
+					<button type="button" id="magic">Bouton Magique</button>
+				</form>
+			</div>
+			<div id="photo_div">
+				<div id="photo_title">
+					<h4>Photo</h4>
+				</div>
+				<div id="photo_profil">
+					<img src="img/anonyme.png" alt="Photo de profil" id="image">
+				</div>
+					<div id="fichier">
+						<label for="browse" class="hide">Browse...</label>
+						<input type="file" id="browse" name="browse">
+					</div>
+				<div id="send_div">
+					<button id="send">Envoyer</button>
+				</div>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
