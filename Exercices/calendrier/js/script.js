@@ -12,7 +12,7 @@
       offsetJours = 0;
     }
     else{
-      offsetJours = calculOffsetJour(mois);
+      offsetJours = calculOffsetJour(mois-1);
     }
 
     for (var i = 0; i < 7; i++){
@@ -34,6 +34,10 @@
               texte.appendChild(document.createTextNode(numerojour));
               cols[j].appendChild(texte);
               numerojour++;
+            }
+            else{
+              texte.appendChild(document.createTextNode(""));
+              cols[j].appendChild(texte);
             }
             break;
           case 2:
@@ -83,8 +87,7 @@
     for (var i = 0; i < mois; i++) {
       console.log("offsetJours = " + offsetJours);
       console.log(nbJourDansMois[mois-1] + "+ " + offsetJours + " % " + 7 + "=");
-      offsetJours = ((nbJourDansMois[mois-1] + offsetJours)%7);
-      console.log("Résultat attendu = " + (31%7));
+      offsetJours = ((parseInt(nbJourDansMois[mois-1]) + offsetJours)%7);
       console.log("Résultat obtenu = " + offsetJours);
       console.log("offsetJours = " + offsetJours);
     }
@@ -99,9 +102,10 @@
   var nbJourDansMois = new Array("31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31");
   var tableid;
   var offsetJours = 0;
+  var moisAAfficher;
 
   genererHeader();
-  genererTableau(1);
+  genererTableau(4);
   myid.appendChild(tableid);
 
 })();
