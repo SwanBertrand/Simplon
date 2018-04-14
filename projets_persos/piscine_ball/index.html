@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Combien peut-on mettre de ... dans une piscine</title>
+</head>
+
+<body>
+    <h1>Combien peut-on faire entrer de <span id="titleBall"></span> dans une piscine ?</h1>
+
+    <!-- Les nouveaux éléments sont ajoutés dans cette balise -->
+    <div id="contenu">
+      <h4>Caractéristiques de la piscine :</h4>
+      <label for="longueurPiscine">Longueur : </label>
+      <input type="text" name="longueurPiscine" id="longueurPiscine" value="" placeholder="Longueur de la piscine en metre">
+      <br/>
+      <label for="largeurPiscine">Largeur : </label>
+      <input type="text" name="largeurPiscine" id="largeurPiscine" value="" placeholder="Largeur de la piscine en metre">
+      <br/>
+      <label for="profondeurPiscine">Profondeur : </label>
+      <input type="text" name="profondeurPiscine" id="profondeurPiscine" value="" placeholder="Profondeur de la piscine en metre">
+      <br/>
+      <h4>Type de balle :</h4>
+      <select name="ball" id="ball">
+        <option value="Balle de tennis" selected>Balle de tennis</option>
+        <option value="Ballon de footbal">Ballon de footbal</option>
+        <option value="Ballon de basket-ball">Ballon de basket-ball</option>
+        <option value="Ballon de volley-ball">Ballon de volley-ball</option>
+      </select>
+      <br/>
+      <h4>Nombre de balles :</h4>
+      <input type="text" name="result" id="result" value="" readonly="readonly">
+      <button id="raz">RAZ</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
