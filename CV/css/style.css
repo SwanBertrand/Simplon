@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: bold;
 }
 
-img{
+#imageProfil{
 	max-width: 100%;
 	height: auto;
 }
@@ -29,29 +29,14 @@ section .heading h2{
 .divider{
 	width: 100px;
 	height: 2px;
-	background: #ff6138
-;
+	background: #ff6138;
 	margin: 0 auto;
 }
-
-/*.grey-divider{
-	width: 100px;
-	height: 2px;
-	background: #408ec9;
-	margin: 0 auto;
-}
-
-.white-divider{
-	width: 100px;
-	height: 2px;
-	background: #fff;
-	margin: 0 auto;
-}*/
 
 /*MENU*/
 
 .navbar{
-	background: #408ec9;
+	background: black;
 	font-size: 12px;
 	letter-spacing: 4px;
 	text-transform: uppercase;
@@ -73,7 +58,7 @@ section .heading h2{
 }
 
 .navbar li a:hover, .navbar li.active a{
-	color: #408ec9 !important;
+	color: black !important;
 	background-color: #fff !important;
 }
 
@@ -91,7 +76,6 @@ section .heading h2{
 	display: flex;
 	flex-direction: column;
 	padding-top: 100px;
-	background: #408ec9;
 }
 
 .profile-picture{
@@ -119,24 +103,42 @@ section .heading h2{
 	border-radius: 3px;
 	margin-top: 20px;
 	padding: 18px 50px;
-	transition: all 0.3s ease-in 0s;
+	/*transition: all 0.3s ease-in 0s;*/
+	position: relative;
+  	overflow: hidden;
 
 }
 
 .button1:hover{
-	background: #fff;
-	color: #408ec9;
+	color:  #fff;
 	text-decoration: none;
+}
+
+.button1::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -120%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255,0.5) 50%, rgba(255, 255, 255, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.button1:hover::after, .button1:focus::after {
+  animation: sheen 1s forwards;
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -30em);
+  }
 }
 
 /*SKILLS*/
 
-#skills{
-	background: #fff;
-}
-
 #skills .heading h2{
-	color: #408ec9;
+	color: #fff;
 }
 
 #skills .progress{
@@ -150,14 +152,10 @@ section .heading h2{
 }
 
 #skills .progress-bar{
-	background: #408ec9;
+	background: #ff6138;
 }
 
 /*EXPERIENCE*/
-
-#experience{
-	background: #408ec9;
-}
 
 #experience .heading h2{
 	color: #fff;
@@ -270,12 +268,8 @@ section .heading h2{
 
 /*EDUCATION*/
 
-#education{
-	background: #fff;
-}
-
 #education .heading h2{
-	color: #408ec9;
+	color: #fff;
 }
 
 .education-block{
@@ -283,14 +277,14 @@ section .heading h2{
 	margin: 0 auto;
 	text-align: center;
 	padding: 30px;
-	background: #ddd;
+	background: #fff;
 	border-radius: 10px;
-	border: 2px solid #ccc;
+	border: 2px solid #fff;
 	margin-bottom: 20px;
 }
 
 .education-block h5{
-	color: #888;
+	color: black;
 	font-size: 15px;
 	margin-bottom: 15px;
 }
@@ -318,10 +312,6 @@ section .heading h2{
 
 /*PROTFOLIO*/
 
-#portfolio{
-	background: #408ec9;
-}
-
 #portfolio .heading h2{
 	color: #fff;
 }
@@ -338,47 +328,11 @@ section .heading h2{
 	-webkit-filter: none;
 }
 
-/*RECOMMENDATIONS
-
-#recommandations{
-	background: #fff;
-}
-
-#recommandations .heading h2{
-	color: #408ec9;
-}
-
-#recommandations ol{
-	list-style: none;
-}
-
-.carousel-control.left, .carousel-control.right{
-	background-image: none !important;
-	color: #408ec9 !important;
-}
-
-.carousel-indicators{
-	bottom: 0px !important;;
-}
-
-.carousel-indicators li{
-	border-color: #408ec9 !important;
-}
-
-.carousel-indicators li.active{
-	background-color: #408ec9;
-}
-
-#myCarousel .item{
-	padding: 40px 30px;
-}
-
-#myCarousel .item h3{
-	color: #408ec9;
-	font-style: italic;
-}*/
-
 /*CONTACT*/
+
+#contact .heading h2{
+	color: #fff;
+}
 
 	/* Conatct start */
 
@@ -386,6 +340,7 @@ section .heading h2{
         {
           text-align: center;
           color:#ff6138
+}
 ;
         }
 
@@ -441,14 +396,15 @@ section .heading h2{
         	margin-top:50px; 
         }
 
-		        @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+		@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
 		@import "http://fonts.googleapis.com/css?family=Roboto:400,500";
 
 		.box > .icon { text-align: center; position: relative; }
-		.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #408ec9; vertical-align: middle; }
+		.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #000; vertical-align: middle; }
 		.box > .icon:hover > .image { background: #ff6138
 ; }
 		.box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
+		.box > .icon > .image > a > i { font-size: 36px !important; color: #fff !important; }
 		.box > .icon:hover > .image > i { color: white !important; }
 		.box > .icon > .info { margin-top: -24px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; padding: 15px 0 10px 0; min-height:163px;}
 		.box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
@@ -481,7 +437,7 @@ section .heading h2{
 /*FOOTER*/
 
 footer{
-	background: #408ec9;
+	/*background: #408ec9;*/
 	padding: 20px 0 40px;
 }
 
@@ -501,4 +457,20 @@ footer .glyphicon:hover{
 footer h5{
 	color: #fff;
 	font-weight: normal;
+}
+
+/*Background*/
+
+#background {
+    background: url('../img/background.png') repeat center bottom;
+    background-repeat: repeat-y;
+ 	background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 1920px;
+    height: 4645px;
+    z-index: -100;
+    overflow-x: hidden;
 }
