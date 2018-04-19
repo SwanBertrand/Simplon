@@ -1,0 +1,344 @@
+/* GENERAL */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 850px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+body{
+	background: url('../img/fond.jpg');
+}
+
+/* NAV BAR */
+
+.navbar{
+  background-color: #001b33;
+  height: 50px;
+}
+.nav .nav-justified li{
+  float: none;
+}
+.nav .btn{
+  background-color: #001b33;
+  margin: 0px 7px;
+}
+.nav .btn a{
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Orbitron;
+  font-size: 12px;
+  text-decoration: none;
+}
+.dropdown-menu {
+  min-width: 200px;
+}
+.dropdown-menu.columns-2 {
+  min-width: 400px;
+  background-color: #001b33;
+  margin-top: 5px;
+  margin-left: 2px;
+  border-radius: unset;
+}
+
+.multi-column-dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 5px;
+}
+.multi-column-dropdown li a {
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-family: Orbitron;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 5px;
+}
+ 
+@media (min-width: 768px){
+  .navbar-nav{
+     margin: 0 auto;
+     display: table;
+     table-layout: fixed;
+     float: none;
+  }
+}  
+
+#text_accueil{
+  font-family: Orbitron;
+  font-weight: bold;
+	text-align: justify;
+	padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 16px;
+}
+
+#top_image{
+  height: 314px;
+}
+
+#gallery{
+  margin: 20px auto;
+  align-content: center;
+}
+
+/* FOOTER */
+
+.footer{
+  height: 140px;
+  width: 850px;
+  background:#001b33;
+  margin-top: 50px;
+}
+
+.footer ul{
+  list-style: none;
+  text-align: center;
+}
+
+.footer ul li{
+  display: inline-block;
+  margin: 10px 10px;
+}
+
+.footer ul li img{
+  height: 40px;
+  width: 40px;
+}
+
+.copyright{
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+  color: #fff;
+  font-family: Orbitron;
+}
+
+.mentions_legales{
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+  color: #fff;
+  font-family: Orbitron;
+}
+.mentions_legales p a{
+  text-decoration: none;
+  color: #fff;
+}
+.metions_texte{
+  text-align: justify;
+  font-family: Orbitron;
+  padding: 20px;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* VIDEOS */
+.video{
+  padding-top: 22px;
+  font-family: Orbitron;
+  color: #001b33;
+  text-align: center;
+  width: 850px;
+  margin: 0px auto;
+}
+
+.descri{
+  padding-top: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3{
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+.separation{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+/*LIVRE D'OR*/
+
+.billet{
+  height: 100px;
+  padding: 75px;
+  display: grid;
+  grid-template-columns: (100px 300px);
+  grid-template-rows: (100px 50px);
+
+}
+
+.bilimage{ 
+  grid-column: 1;
+  grid-row: 1 / 2;
+}
+
+.biltext{ 
+  font-size: 0.8em;
+  font-style: italic;
+  padding-left: 20px;
+  padding-top: 20px;
+  grid-column: 2;
+  grid-row: 1 / 2;
+  text-align: justify;
+}
+
+.biltitre{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.bilform{
+  margin-left: 150px;
+  padding-bottom: 100px;
+}
+
+hr {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/* BOUTIQUE*/
+
+.intro{
+  width: 850px;
+  margin: 0px auto;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Baumans;
+  font-weight: bold;
+}
+
+.wrapper2{
+  width: 850px;
+  margin: 0px auto;
+  padding: 0px;
+  background: none;
+}
+.titre{
+  border-bottom: 3px solid #022C4D;
+  margin: 0px auto;
+  padding: 0px;
+  width: 500px;
+}
+.gastronogeek{
+  width: 170px;
+  margin: 0px auto;
+  padding: 0px;
+  float: left;
+}
+
+.potions{
+  width: 170px;
+  margin: 0px auto;
+  padding: 0px;
+  float: left;
+}
+
+.geek_pastry{
+  width: 170px;
+  margin: 0px auto;
+  padding: 0px;
+  float: left;
+}
+
+.seriescultes{
+  width: 170px;
+  margin: 0px auto;
+  padding: 0px;
+  float: left;
+}
+
+.quiz{
+  width: 170px;
+  margin: 0px auto;
+  padding: 0px;
+  float: left;
+}
+
+.paragraphe{
+  width: 680px;
+  margin: 0px auto;
+  margin-left: 150px;
+  text-align: justify;
+  font-family: Baumans;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* CONTACT */
+
+#contact
+{
+    padding: 100px 0;
+    text-align: center;
+}
+ 
+.nom-con
+{
+    margin-right: 300px;
+}
+.superbox
+{
+    margin-right: 240px;
+}
+.bouton-contact
+{
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding:11px;
+    background-color: #001b33;
+}
+.bugmessage
+{
+    margin-right: 330px;
+}
+.sujet-con
+{
+    margin-right: 385px;
+}
+.prénom-con
+{
+    margin-right: 365px;
+}
+.email-con
+{
+    margin-right: 295px;
+}
+.modal
+{
+    background-color: #4b77be;
+}
+
+/* RECETTES */
+
+.formulaire_recherche{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+label #label_recherche{
+  text-align: center;
+  margin: 0;
+  width: 20%;
+  padding-top: 20px;
+  font-weight: bold;
+}
+#btn_research{
+  width: 20%;
+  background-color: #001b33;
+  color: white;
+}
+.recherche{
+  margin-top: 20px;
+  font-family: 'Orbitron';
+  font-weight: bold;
+}
