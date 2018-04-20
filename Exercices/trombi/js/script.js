@@ -7,6 +7,7 @@ var rayonCercle = 300;
 var tabAngles = [];
 var tabX = [];
 var tabY = [];
+var trombiDiv = document.getElementById("trombiDiv");
 var idCyril = document.getElementById("cyril");
 var largeurPhoto = document.getElementById("cyril").offsetWidth;
 var hauteurPhoto = document.getElementById("cyril").offsetHeight;
@@ -46,7 +47,7 @@ function calculCoordonnées(nbPhotos){
 
 function randomTrombi(){
 
-	var trombiDiv = document.getElementById("trombiDiv");
+	// var trombiDiv = document.getElementById("trombiDiv");
 
 	for (var i = 0; i < trombiDiv.children.length; i++) {
 
@@ -67,7 +68,7 @@ function randomTrombi(){
 
 function centerTrombi(){
 
-	var trombiDiv = document.getElementById("trombiDiv");
+	// var trombiDiv = document.getElementById("trombiDiv");
 
 	for (var i = 0; i < trombiDiv.children.length; i++) {
 
@@ -85,7 +86,7 @@ function centerTrombi(){
 
 function circleTrombi(){
 
-	var trombiDiv = document.getElementById("trombiDiv");
+	// var trombiDiv = document.getElementById("trombiDiv");
 
 	for (var i = 0; i < trombiDiv.children.length; i++) {
 
@@ -113,6 +114,12 @@ document.getElementById("aleatoire").addEventListener("click", function(){
 });
 document.getElementById("centrence").addEventListener("click", centerTrombi);
 document.getElementById("circle").addEventListener("click", circleTrombi);
+
+trombiDiv.children.addEventListener("hover", function(){
+
+	
+
+});
 
 calculCoordonnées(trombiDiv.children.length - 2);
 randomTrombi();

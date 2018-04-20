@@ -12,4 +12,13 @@
 	    echo '<p>Connexion au serveur MySQL établie avec succès.</p >';
 	}
 
+	function lireNomDansBdd(id){
+
+		$reponse = $connect->query(SELECT `name` FROM `trombinoscope` WHERE id = $id);
+      	echo($reponse);
+
+	}
+
+	lireNomDansBdd("cyril");
+
 ?>
