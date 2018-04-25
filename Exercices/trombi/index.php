@@ -1,6 +1,6 @@
 <?php
 
-	require "php/script.php";
+	require 'php/script.php';
 
 ?>
 
@@ -37,7 +37,7 @@
 			<img id="nicolas" src="img/Pie_Nicolas_small.jpg" alt="nicolas" >
 			<img id="marvin_p" src="img/Poti_Marvin_small.jpg" alt="marvin_p" >
 			<img id="floriane" src="img/Mura_Floriane_small.jpg" alt="floriane" >
-			<img id="tenders" src="img/Rasa_Tendry_small.jpg" alt="tenders" > <!-- KFC -->
+			<img id="tendry" src="img/Rasa_Tendry_small.jpg" alt="tenders" > <!-- KFC -->
 			<img id="swan" src="img/Ber_Swan_small.jpg" alt="swan" >
 			<img id="benoit" src="img/Par_Benoit_small.jpg" alt="benoit" >
 			<img id="maelie" src="img/Len_Maélie_small.jpg" alt="maelie" >
@@ -53,21 +53,26 @@
 		<hr />
 		<div id="individuelle">
 			<div class="descriptif">
-				<img id="laurent" src="img/And_Laurent_small.jpg" alt="une photo" >
+				<img id="imageDetail" src="img/And_Laurent_small.jpg" alt="une photo" >
 				
 			</div>
 			<div class="pedigree">
-				<h3 id="nomPrenom">Laurent Andrieux</h3>
-				<p id="textePerso">Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur et bybliothecis sepulcrorum ritu in perpetuum clausis organa fabricantur hydraulica, et lyrae ad speciem carpentorum ingentes tibiaeque et histrionici gestus instrumenta non levia.
-				Quod cum ita sit, paucae domus studiorum </p>
+				<h3 id="nomPrenom">
+					
+					
+
+				</h3>
+				<p id="textePerso">
+
+				
+
+				</p>
 
 			</div>
-			<button id="aleatoire">Aléatoirisation</button>
-			<button id="centrence">Centralisation</button>
-			<button id="circle">Cerclisation</button>
 		</div>
 	</section>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/trombi.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
 </body>
 
 </html>

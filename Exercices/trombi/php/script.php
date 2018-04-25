@@ -5,20 +5,25 @@
 	$user_name = 'dbo734916633';
 	$password = 'Simplon_Cannes06';
 
-	$connect = mysql_connect($host_name, $user_name, $password, $database);
-	if (mysql_errno()) {
-	    die('<p>La connexion au serveur MySQL a échoué: '.mysql_error().'</p>');
-	} else {
-	    echo '<p>Connexion au serveur MySQL établie avec succès.</p >';
+	$bdd = null;
+	try {
+	  $bdd = new PDO("mysql:host=$host_name; dbname=$database;", $user_name, $password);
+	} catch (PDOException $e) {
+	  echo "Erreur!: " . $e->getMessage() . "<br/>";
+	  die();
 	}
 
-	function lireNomDansBdd(id){
+	if(isset($_GET["id"])){
 
-		$reponse = $connect->query(SELECT `name` FROM `trombinoscope` WHERE id = $id);
-      	echo($reponse);
+		$maReponse = array();
+
+		$reponse = $bdd->query('SELECT `name`, `parcours` FROM `trombinoscope` WHERE `id` = "'.$_GET["id"].'"');
+		$donnees = $reponse->fetchAll();
+		$row = $donnees[0];
+				$maReponse = array('name'=>$row["name"], 'parcours'=>$row["parcours"]);
+
+		echo json_encode($maReponse);
 
 	}
-
-	lireNomDansBdd("cyril");
 
 ?>
