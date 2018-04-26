@@ -38,14 +38,14 @@ $( document ).ready(function(){
     		if ($.isNumeric($(this).text())){
 
 	            if ( ($(this).text()%2) == 0) {
-	               textToDisplay += " " + $(this).text() + " = pair;";
+	               textToDisplay += $(this).text() + " = pair;\n";
 	            }
 	            if ( ($(this).text()%2) != 0) {
-	               textToDisplay += " " + $(this).text() + " = impair;";
+	               textToDisplay += $(this).text() + " = impair;\n";
 	            }
 	        }
 	        else{
-	            textToDisplay += " " + $(this).text() + " = chaine de caractères;";
+	            textToDisplay += $(this).text() + " = chaine de caractères;\n";
 	        }
     	})
 

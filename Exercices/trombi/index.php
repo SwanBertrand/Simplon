@@ -1,4 +1,3 @@
-
 <?php
 
 	require 'php/script.php';
@@ -13,13 +12,9 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 <body>
-
 	<section class="trombinoscope"> <!-- Conteneur -->
-
 		<div class="cercle" id="trombiDiv">
-
 			<img id="franck" src="img/Barland_Franck_small.jpg" alt="franck" >
 			<img id="ali" src="img/Ben_Ali_small.jpg" alt="ali" >
 			<img id="michel" src="img/Bra_Michel_small.jpg" alt="michel" >
@@ -48,32 +43,19 @@
 			<img id="jeremy" src="img/Cin_Jérémy_small.jpg" alt="jeremy" >
 			<img id="remi" src="img/Lan_Remi_small.jpg" alt="remi" >
 			<img id="cyril" src="img/Enr_Cyril_very_small.png" alt="cyril" > <!-- The most wanted -->
-
 		</div>
-
 		<hr />
 		<div id="individuelle">
 			<div class="descriptif">
 				<img id="imageDetail" src="img/And_Laurent_small.jpg" alt="une photo" >
-				
 			</div>
 			<div class="pedigree">
-				<h3 id="nomPrenom">
-					
-					
-
-				</h3>
-				<p id="textePerso">
-
-				
-
-				</p>
-
+				<h3 id="nomPrenom"></h3>
+				<p id="textePerso"></p>
 			</div>
 		</div>
 	</section>
 	<script type="text/javascript" src="js/trombi.js"></script>
 	<script type="text/javascript" src="js/ajax.js"></script>
 </body>
-
 </html>
