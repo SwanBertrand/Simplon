@@ -44,7 +44,7 @@
 			<img id="remi" src="img/Lan_Remi_small.jpg" alt="remi" >
 			<img id="cyril" src="img/Enr_Cyril_very_small.png" alt="cyril" > <!-- The most wanted -->
 		</div>
-		<hr />
+		<hr/>
 		<div id="individuelle">
 			<div class="descriptif">
 				<img id="imageDetail" src="img/And_Laurent_small.jpg" alt="une photo" >

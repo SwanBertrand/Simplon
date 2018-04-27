@@ -106,11 +106,16 @@ function circleTrombi(){
 
 };
 
-$(trombiDiv.children).mouseover(function(){
+$(trombiDiv.children).hover(function(){
 
 	var cheminImage = $(this).attr("src");
 	var imageDedestination = document.getElementById("imageDetail");
 	imageDedestination.setAttribute("src", cheminImage);
+
+},function(){
+
+	var imageDedestination = document.getElementById("imageDetail");
+	imageDedestination.setAttribute("src", "../img/And_Laurent_small.jpg");
 
 });
 

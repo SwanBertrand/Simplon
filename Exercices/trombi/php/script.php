@@ -26,4 +26,7 @@
 
 	}
 
+	$reponse = null;
+	$bdd = null;
+
 ?>
