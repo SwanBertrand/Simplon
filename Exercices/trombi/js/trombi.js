@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 var coordX;
 var coordY;
 var randomX;
@@ -72,10 +74,10 @@ function centerTrombi(){
 
 	for (var i = 0; i < trombiDiv.children.length; i++) {
 
-		trombiDiv.children[i].style.left = coordXCentre + "px";
-		trombiDiv.children[i].style.top = coordYCentre + "px";
+		// trombiDiv.children[i].style.left = coordXCentre + "px";
+		// trombiDiv.children[i].style.top = coordYCentre + "px";
 
-		// $(trombiDiv.children[i]).animate({left: coordXCentre + "px", top: coordYCentre + "px"},1000);
+		$(trombiDiv.children[i]).animate({left: coordXCentre + "px", top: coordYCentre + "px"},1000);
 
 	}	
 
@@ -120,5 +122,20 @@ $(trombiDiv.children).hover(function(){
 });
 
 calculCoordonnées(trombiDiv.children.length - 2);
-centerTrombi();
-circleTrombi();
+
+randomTrombi();
+
+$(trombiDiv).hover(function(){
+
+	centerTrombi();
+	circleTrombi();
+	$(trombiDiv).clearQueue();
+
+},function(){
+
+	randomTrombi();
+	$(trombiDiv).clearQueue();
+
+});
+
+});
