@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Le cube des Zèbres</title> <!-- Titre dans l'onglet -->
+		<meta charset="utf-8"> <!-- Prise en compte des carectères spéciaux -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale=1, user-scalable=no"> <!-- Déclaration du viewport pour le coté responsive -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilité navigateurs -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- Ajout de jQuery au projet -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Ajout de Bootstrap au projet -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> <!-- Ajout de bootstrap au projet -->
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> <!-- Ajout de la police Lato -->
+		<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Lien vers le fichier CSS -->
+	</head>
+	<body data-spy="scroll" data-target=".navbar" offset="60px;"> <!-- Scrollspy pour le hover du menu -->
+		<nav class="navbar navbar-dark  navbar-fixed-top"> <!-- Navbar -->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span> <!-- Icone du menu en résolution inférieure à tablette -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a id="titre" href="#history"><img id="titleCube" src="img/twisting-rubix-cube.gif"><span id="l">L</span>e <span id="r">R</span>ubik's <span id="c">C</span>ube <span id="d">D</span>es <span id="z">Z</span>èbres</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav"> <!-- Elements du menu -->
+						<li >
+			      			<a class="nav-link" href="#history">Son Histoire</a>
+			    		</li>
+			    		<li>
+			      			<a class="nav-link" href="#glossaire">Glossaire</a>
+			    		</li>
+					    <li class="nav-item dropdown" id="resolve_button">
+					    	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#resolve" role="button" aria-haspopup="true" aria-expanded="false">Sa Résolution</a>
+					   		<ul class="dropdown-menu" id="steps_menu">
+						        <li><a href="#white_cross">La croix blanche</a></li>
+						        <li><a href="#white_edges">Les arrêtes blanches</a></li>
+						        <li><a href="#white_corner">Les coins blancs</a></li>
+						        <li><a href="#second_crown">La deuxième couronne</a></li>
+						        <li><a href="#yellow_cross">La croix jaune</a></li>
+						        <li><a href="#yellow_egdes">Les arrêtes jaunes</a></li>
+						        <li><a href="#yellow_corners">Placer les coins jaunes</a></li>
+						        <li><a href="#final_step">Résolution du cube</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section id="history" class="container">
+		  	<h2>L'Histoire du Rubik's Cube</h2>
+		  	<br/>
+		  	<p>
+              Le Rubik’s Cube (ou Cube de Rubik) fut inventé le 19 mai 1974 par Ernő Rubik.
+          Ernő Rubik est sculpteur, architecte et professeur de design hongrois, né le 13 juillet 1944 à Budapest (Hongrie). Il est connu mondialement pour sa .<br/>
+
+        Le Rubik’s Cube est un casse-tête géométrique à trois dimensions composé de 26 pièces.</br>
+        L’idée initiale d’Ernő Rubik était de construire un cube afin d’amener ses étudiants à deviner quel était son mécanisme interne, comment les petits cubes pouvaient tourner suivant trois axes tout en restant solidaires, et ainsi de les intéresser à la géométrie en 3 dimensions. <br/>
+
+        Ce n’est qu’ensuite qu’il eut l’idée (par la suggestion d’un ami) de colorer chaque face d’une couleur différente, constatant alors qu’après mélange, l’ordre initial du cube s’avérait extrêmement difficile à retrouver (une chance sur 43 252 003 274 489 856 000 à chaque rotation). Il eut alors l’idée de le commercialiser en tant que « casse-tête » géométrique et mathématique.<br/>
+
+        En Hongrie, le cube gagne en popularité par le bouche-à-oreille, et est bientôt connu dans toute l’Europe. En septembre 1979, à l'instigation de Bernard Farkas3, un accord est signé avec l'entreprise "Ideal Toys" pour distribuer le cube mondialement. Ideal Toys renomme alors le cube « Rubik’s Cube » et les premiers exemplaires sont exportés de Hongrie vers mai 1980, en direction de Londres, de New York et de Paris.<br/>
+
+        Aujourd’hui, le Rubik’s Cube est copié sous licence par de nombreux distributeurs par le monde.
+    </p>
+	  	</section>
+	  	<hr/>
+		<section id="glossaire" class="container">
+		  	<h2>Glossaire</h2>
+		  	<h3>Le jargon du Rubik's Cube</h3>
+		  	<p>Pour vous apprendre à résoudre le Rubik's Cube, nous allons utiliser un vocabulaire particulier détaillé ci-dessous :</p>
+		  	<div>
+		  		<h4>Les faces:</h4>
+		  		<figure>
+		  			<img src="img/face.png">
+		  			<hr/>
+		  			<figcaption>La partie colorée est appelée "face"</figcaption>
+		  		</figure>
+		  	</div>
+		  	<div>
+		  		<h4>Les colonnes:</h4>
+		  		<figure>
+		  			<img src="img/colonne.png">
+		  			<hr/>
+		  			<figcaption>La partie colorée est appellée "colonne"</figcaption>
+		  		</figure>
+		  		
+		  	</div>
+		  	<div>
+		  		<h4>Les couronnes:</h4>
+		  		<figure>
+		  			<img src="img/couronne.png">
+		  			<hr/>
+		  			<figcaption>La partie colorée est appellée "couronne"</figcaption>
+		  		</figure>
+		  	</div>
+		  	<div>
+		  		<h4>Les centres:</h4>
+		  		<figure>
+		  			<img src="img/centre.png">
+		  			<hr/>
+		  			<figcaption>La partie colorée est appellée "centre"</figcaption>
+		  		</figure>
+		  	</div>
+		  	<div>
+		  		<h4>Les arrêtes:</h4>
+		  		<figure>
+		  			<img src="img/arrete.png">
+		  			<hr/>
+		  			<figcaption>La partie colorée est appellée "arrête"</figcaption>
+		  		</figure>
+		  	</div>
+		  	<div>
+		  		<h4>Les coins:</h4>
+		  		<figure>
+		  			<img src="img/coin.png">
+		  			<hr/>
+		  			<figcaption>La partie colorée est appellée "coin"</figcaption>
+		  		</figure>
+		  	</div>
+		</section>
+		<hr/>
+		<section id="resolve" class="container">
+			<h2>La résolution du Rubik's Cube.</h2>
+			<br/>
+			<p>Dans cette partie, nous allons vous apprendre une première méthode pour résoudre le cube. Ce n'est pas une méthode pour réalser des temps, mais pour résoudre le cube en apprenant quelques algorithmes simples.<br/>Elle se décompose en 8 étapes :</p>
+			<br/>
+			<ul>
+				<li><a href="#white_cross">La croix blanche</a></li>
+				<li><a href="#white_edges">Les arrêtes blanches</a></li>
+				<li><a href="#white_corner">Les coins blancs</a></li>
+				<li><a href="#second_crown">La deuxième couronne</a></li>
+				<li><a href="#yellow_cross">La croix jaune</a></li>
+				<li><a href="#yellow_egdes">Les arrêtes jaunes</a></li>
+				<li><a href="#yellow_corners">Placer les coins jaunes</a></li>
+				<li><a href="#final_step">La résolution</a></li>
+			</ul>
+			<div class="container-fluid" id="white_cross">
+				<h3>La croix blanche.</h3>
+				<p>Dans cette première étape nous allons commencer par réaliser la croix blanche. Techniquement, vous pouvez commencer par n'importe quelle face, mais nous allons vous expliquer la résultion du cube en commençant par la face blanche.</p>
+				<img src="img/croix_blanche.png">
+			</div>
+			<div class="container-fluid" id="white_edges">
+				<h3>Les arrêtes blanches.</h3>
+				<p>Si vous n'avez pas réalisé la "croix blanche parfaite" lors de la première étape, vous allez devoir positionner les arretes blanche au bon endroit. Faites tourner la couronne du haut afin d'avoir le maximum d'arrêtes bien placées.<br/>Vous devriez tomber sur 2 cas :</p>
+				<ol>
+					<li>Les bonnes arrêtes sont sur des faces opposées.</li>
+					<img src="img/croix_blanche_2_faces_opposees_f1.png">
+					<img src="img/croix_blanche_2_faces_opposees_f2.png">
+					<li>Les bonnes arrêtes sont sur des faces adjacentes.</li>
+					<img src="img/croix_blanche_2_faces_adjacentes.png">
+				</ol>
+				<p>Si vous êtes dans le cas 1, tenez le cube avec une face bien placée face à vous.<br/>Si vous êtes dans le cas 2, tenez le cube avec une face mauvaise face à vous et une bonne sur la droite.</p>
+				<p>Voici l'algorithme que vous allez devoir utiliser pour compléter cette étape, vous devez le réaliser une fois pour le cas 1, vous serez alors dans le cas 2. Il ne reste plus qu'à le réaliser une seconde fois :<br/></p>
+				<ul>
+					<li><span class="glyphicon glyphicon-arrow-up"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-down"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-up"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> <span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-down"></span> colonne droite (s'arrêter ici dans le cas 1 puis reprendre l'algorithme au début)</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+				</ul>
+				<p>Voici le résultat attendu :</p>
+				<img src="img/croix_blanche_parfaite_f1.png">
+				<img src="img/croix_blanche_parfaite_f2.png">
+			</div>
+			<div class="container-fluid" id="white_corner">
+				<h3>Les coins blancs.</h3>
+				<p>Une fois la que la croix blanche parfaite est réalisée, prendre le cube face jaune vers le haut, puis faite trouner le couronne du haut afin de placer le coin blanc au dessus de sa future position. Vous pouvez tomber sur 3 cas :</p>
+				<ol>
+					<li>Face blanche à droite</li>
+					<img src="img/placer_coin_blanc_droite.png">
+					<li>Face blanche au dessus</li>
+					<img src="img/placer_coin_blanc_dessus.png">
+					<li>Face blanche en face</li>
+					<img src="img/placer_coin_blanc_face.png">
+				</ul>
+				<p>Voici l'algorithme que vous allez devoir utiliser pour compléter cette étape, vous devez le réaliser une fois pour le cas 1, 3 fois pour le cas 2 et 5 fois pour le cas 3 :<br/></p>
+				<ul>
+					<li><span class="glyphicon glyphicon-arrow-up"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-down"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-right"></span> couronne haut</li>
+				</ul>
+				<br/>
+				<p>Voici le résultat attendu :</p>
+				<img src="img/placer_coin_blanc_ok_f1.png">
+				<img src="img/placer_coin_blanc_ok_f2.png">
+				<br/>
+				<p>Répétez cet algorithme pour les 3 coins restants.</p>
+				<br/>
+				<p>Voici le résultat attendu :<br/></p>
+				<img src="img/premiere_couronne_f1.png">
+				<img src="img/premiere_couronne_f2.png">
+				<img src="img/premiere_couronne_f3.png">
+				<img src="img/premiere_couronne_f4.png">
+			</div>
+			<div class="container-fluid" id="second_crown">
+				<h3>La deuxième couronne.</h3>
+				<p>Afin de réaliser la deuxième couronne, vous allez devoir faire tourner la couronne du haut pour arriver à un résultat similaire à celui ci-dessous. Vous devez vous imaginer un "T" à l'envers, avec l'arrête et le centre de la même couleurs. La couleur du dessus ne doit pas être jaune.<br/></p>
+				<img src="img/deuxieme_couronne_start_f1.png">
+				<img src="img/deuxieme_couronne_start_f2.png">
+				<img src="img/deuxieme_couronne_start_f1_ko.png">
+				<p>Pour le premier cas, vous devez "descendre l'arrête à droite", pour cela utilisez l'algorithme suivant :<br/></p>
+				<ul>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-up"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-right"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-down"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-right"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-repeat mirror"></span> face</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-repeat"></span> face</li>
+				</ul>
+				<img src="img/deuxieme_couronne_start_f1_place.png">
+				<p>Pour le deuxième cas, vous devez "descendre l'arrête à gauche", pour cela utilisez l'algorithme suivant :<br/></p>
+				<ul>
+					<li><span class="glyphicon glyphicon-arrow-right"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-up"></span> colonne gauche</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-down"></span> colonne gauche</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-repeat"></span> face</li>
+					<li><span class="glyphicon glyphicon-arrow-right"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-repeat mirror"></span> face</li>
+				</ul>
+				<img src="img/deuxieme_couronne_start_f2_place.png">
+				<p>Répétez cette étape pour les autres faces/couleurs pour obtenir le résultat suivant :<br/></p>
+				<img src="img/deuxieme_couronne_finie_f1.png">
+				<img src="img/deuxieme_couronne_finie_f2.png">
+				<img src="img/deuxieme_couronne_finie_f3.png">
+				<img src="img/deuxieme_couronne_finie_f4.png">
+			</div>
+			<div class="container-fluid" id="yellow_cross">
+				<h3>La croix jaune.</h3>
+				<br/>
+				<p>La prochaine étape consiste à realiser la croix jaune. A ce moment de la résolution du cube, vous êtes forcément dans l'une des 3 configurations suivantes :<br/></p>
+				<img src="img/croix_jaune_cas_1.png">
+				<img src="img/croix_jaune_cas_2.png">
+				<img src="img/croix_jaune_cas_3.png">
+				<br/>
+				<p>Voici l'algorithme que vous allez devoir utiliser pour compléter cette étape, vous devez le réaliser une fois pour le cas 1, deux fois pour le cas 2 et trois fois pour le cas 3 :</p>
+				<br/>
+				<ul>
+					<li><span class="glyphicon glyphicon-arrow-down"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-right"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-repeat mirror"></span> face</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-repeat"></span> face</li>
+					<li><span class="glyphicon glyphicon-arrow-up"></span> colonne droite</li>
+				</ul>
+				<p>Vous devez obtenir le résultat suivant :</p>
+				<img src="img/croix_jaune_ok.png">
+			</div>
+			<div class="container-fluid" id="yellow_egdes">
+				<h3>Les arrêtes jaunes.</h3>
+				<p>Vous devez maintenant tourner la couronne du haut afin de placer le maximum d'arrêtes au bon endroit.<br/>Il y a 2 cas possibles:<br/></p>
+				<ol>
+					<li>Les bonnes arrêtes sont sur des faces opposées.</li>
+					<img src="img/arretes_jaunes_2_faces_opposees_f1.png">
+					<img src="img/arretes_jaunes_2_faces_opposees_f2.png">
+					<li>Les bonnes arrêtes sont sur des faces adjacentes.</li>
+					<img src="img/arretes_jaunes_2_faces_adjacentes.png">
+				</ol>
+				<p>Si vous êtes dans le cas 1, tenez le cube avec une face bien placée face à vous.<br/>Si vous êtes dans le cas 2, tenez le cube avec une face mauvaise face à vous et une bonne sur la droite.</p>
+				<p>Voici l'algorithme que vous allez devoir utiliser pour compléter cette étape, vous devez le réaliser une fois pour le cas 1, vous serez alors dans le cas 2. Il ne reste plus qu'à le réaliser une seconde fois :<br/></p>
+				<ul>
+					<li><span class="glyphicon glyphicon-arrow-up"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-down"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-up"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> <span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-down"></span> colonne droite (s'arrêter ici dans le cas 1 puis reprendre l'algorithme au début)</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+				</ul>
+				<p>Voici le résultat attendu :</p>
+				<img src="img/croix_jaune_parfaite_f1.png">
+				<img src="img/croix_jaune_parfaite_f2.png">
+			</div>
+			<div class="container-fluid" id="yellow_corners">
+				<h3>Placer les coins jaunes.</h3>
+				<p>Vous devez maintenant trouver un coin jaune bien placé, c'est à dire quil doit se trouvé au croisement des 3 faces qui ont les mêmes couleurs que les siennes.<br/>Voici un exemple:<br/></p>
+				<img src="img/coin_jaune_bien_place.png">
+				<p>Il se peut que ce coin soit directment dans le bon sens, cela vous évitera d'avoir à le replacer dans la phase suivante.</p>
+				<p>Voici maintenant un des cas possible:<br/></p>
+				<img src="img/coin_jaune_mal_place_f1.png">
+				<img src="img/coin_jaune_mal_place_f2.png">
+				<p>Réalisez maintenant l'algorithme ci-dessous, autant de fois que mécessaire pour que les 4 coins soient bien placés:</p>
+				<br/>
+				<ul>
+					<li><span class="glyphicon glyphicon-arrow-up"></span> colonne gauche</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-up"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-right"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-down"></span> colonne gauche</li>
+					<li><span class="glyphicon glyphicon-arrow-left"></span> couronne haut</li>
+					<li><span class="glyphicon glyphicon-arrow-down"></span> colonne droite</li>
+					<li><span class="glyphicon glyphicon-arrow-right"></span> couronne haut</li>
+				</ul>
+				<p>Voici les 4 faces d'un des résultats que vous pouvez obtenir:<br/></p>
+				<img src="img/coins_jaunes_bien_places_f1.png">
+				<img src="img/coins_jaunes_bien_places_f2.png">
+				<img src="img/coins_jaunes_bien_places_f3.png">
+				<img src="img/coins_jaunes_bien_places_f4.png">
+			</div>
+			<div class="container-fluid" id="final_step">
+				<h3>La résolution.</h3>
+				<p></p>
+			</div>
+		</section>
+		<script type="text/javascript" src="js/script.js"></script> <!-- Lien vers le script -->
+	</body>
+</html>
